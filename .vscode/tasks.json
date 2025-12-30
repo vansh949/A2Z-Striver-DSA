@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run-io",
+      "type": "shell",
+      "command": "g++-15 -std=c++17 \"${workspaceFolder}/${fileBasenameNoExtension}.cpp\" -o \"${workspaceFolder}/${fileBasenameNoExtension}\" && \"${workspaceFolder}/${fileBasenameNoExtension}\" < \"${workspaceFolder}/input.txt\" > \"${workspaceFolder}/output.txt\"",
+      "problemMatcher": []
+    }
+  ]
+}
