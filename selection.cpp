@@ -52,7 +52,7 @@ int main() {
     for(int i=0; i<n;i++){
         cin>>arr[i];   // input of arrray
     }
- //selection_sort(arr,n); //main fun mai call kia selection_sort fun
+ //selection_sort(arr,n); //m=in fun mai call kia selection_sort fun
   //bubble_sort(arr,n);
   insertion_sort(arr,n);
    for(int i=0;i<n;i++){
