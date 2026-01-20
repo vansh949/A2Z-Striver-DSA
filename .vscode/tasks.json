@@ -2,10 +2,26 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "run-io",
+      "label": "Run with input/output",
       "type": "shell",
-      "command": "g++-15 -std=c++17 \"${workspaceFolder}/${fileBasenameNoExtension}.cpp\" -o \"${workspaceFolder}/${fileBasenameNoExtension}\" && \"${workspaceFolder}/${fileBasenameNoExtension}\" < \"${workspaceFolder}/input.txt\" > \"${workspaceFolder}/output.txt\"",
-      "problemMatcher": []
+      "command": "/opt/homebrew/bin/g++-15",
+      "args": [
+        "-std=c++17",
+        "${file}",
+        "-o",
+        "${fileBasenameNoExtension}",
+        "&&",
+        "./${fileBasenameNoExtension}",
+        "<",
+        "input.txt",
+        ">",
+        "output.txt"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
